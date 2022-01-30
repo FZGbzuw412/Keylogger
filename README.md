@@ -1,13 +1,30 @@
 # Keylogger
 Keystrokes' logger based on WinAPI
 
-# Description
+## Description
 Simple implentation of keylogger logging keystrokes and mouse events and writing obtained information to .txt file.
 Keylogger uses powers of module [pywin32](https://pypi.org/project/pywin32/).
 
-# Requirements
+## Requirements
 + Python >= 3.8 Version
 + pywin32
+
+## Usage
+```
+#clone or download zip archive
+https://github.com/FZGbzuw412/Keylogger
+
+# go to directory with files
+cd Keylogger 
+
+#install essential requirements
+pip3 install -r requirements.txt
+
+#launch
+python3 launcher.py
+#or
+launcher.py
+```
 
 ## Licence
   
