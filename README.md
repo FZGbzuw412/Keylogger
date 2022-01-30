@@ -14,7 +14,7 @@ Keylogger uses powers of module [pywin32](https://pypi.org/project/pywin32/).
 #clone or download zip archive
 https://github.com/FZGbzuw412/Keylogger
 
-# go to directory with files
+#go to directory with files
 cd Keylogger 
 
 #install essential requirements
